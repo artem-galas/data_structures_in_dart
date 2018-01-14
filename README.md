@@ -14,6 +14,9 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - ClassData - Using Arrays with Object.
 - Chap 03. Simple Sorting
   - BubbleSort - Bubble Sort Example
+  - Select Sort
+  - Insert Sort
+  - Object Sort - Object sort example using **insert sort** and **Lexicographical Comparisons**
 
 ## How to Run listing?
 
