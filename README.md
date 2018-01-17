@@ -17,6 +17,11 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - Select Sort
   - Insert Sort
   - Object Sort - Object sort example using **insert sort** and **Lexicographical Comparisons**
+- Chap 04. Stacks and Queues
+  - Stack
+    - stack - simple stack with array of integer
+    - reverse - reversing a word eq: `artem` -> `metra`
+    - brackets - Delimiter Matching - a program that checks the delimiters in a line of text typed by the user eq: `a{b(c]d}e` -> `Error ] at 5`
 
 ## How to Run listing?
 
