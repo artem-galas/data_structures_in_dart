@@ -22,6 +22,10 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
     - stack - simple stack with array of integer
     - reverse - reversing a word eq: `artem` -> `metra`
     - brackets - Delimiter Matching - a program that checks the delimiters in a line of text typed by the user eq: `a{b(c]d}e` -> `Error ] at 5`
+  - Queue - simple queue.
+  - Priority Queue
+  - Infix - Convert Infix to Postfix eq `A+B*C` -> `ABC*+`
+  - Postfix - Evaluate Postfix Expressions eq `57+` -> `Evaluates to 12`
 
 ## How to Run listing?
 
