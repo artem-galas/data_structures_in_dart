@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'dart:io';
-
 class Person {
   String firstName;
   String lastName;
