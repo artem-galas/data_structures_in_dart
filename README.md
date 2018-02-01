@@ -26,6 +26,10 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - Priority Queue
   - Infix - Convert Infix to Postfix eq `A+B*C` -> `ABC*+`
   - Postfix - Evaluate Postfix Expressions eq `57+` -> `Evaluates to 12`
+### Chap 05. Linked Lists
+  - LinkedList
+    - `simple_linked_list ` - simple linked list implemintation with `deleteFirst` and `insertFirst` methods
+    - `linked_list` - adding `delete` and `find` methods.
 
 ## How to Run listing?
 
