@@ -30,8 +30,14 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - LinkedList
     - `simple_linked_list ` - simple linked list implemintation with `deleteFirst` and `insertFirst` methods
     - `linked_list` - adding `delete` and `find` methods.
-
+  - FirstLastList - linked list with link to `first` and `last` object
+  - LinkStack - `stack` implementation using `linked list`
+  - LinkQueue `queue` implementation using `first_last_list`
+  - SortedList - sorted linked list
+  - List Insertion Sort - insertion sort array using linked list
+  - DobuleLinkedList - linked list where each element contain `next` and `previous` link
+  - ListIteraort - implementation linked list with iterator 
 ## How to Run listing?
 
 - Open folder with project
-- Run into you terminal `pub run path/to/file.dart` e.q `pub run Chap02/LowArray/low_array.dart `
+- Run into you terminal `dart path/to/file.dart` e.q `dart Chap02/LowArray/low_array.dart `
