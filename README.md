@@ -37,6 +37,25 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - List Insertion Sort - insertion sort array using linked list
   - DobuleLinkedList - linked list where each element contain `next` and `previous` link
   - ListIteraort - implementation linked list with iterator 
+### Chap06. Recursion
+  - `triangle` - simple example of recursion - calculate triangle number. E.g `Triangle number 3 -> 6` (1, 3, 6, 10, 15, 21...)
+  - `anagram` - somple program, which can do anograms. 
+    E.g Input: `cat`
+    Output:
+    ```
+    1  c a t
+    2  c t a
+    3  a t c
+    4  a c t
+    5  t c a
+    6  t a c
+    ```
+  - `binary_search` - binary search implemented with recursrion (binary search see Chap02/OrderedArray)
+  - `towers` - Tower of Hanoi algorithms using recursion
+  - `merge` - very simple implemintation merge 2 pre-sorted arrays.
+  - `merge_sort` - Merge sorting array
+  - `stack_triangle` - calculate triangle number with recursion and stack
+  - `stacl_triangle2` - calculate triangle number usign stack insted of recusion
 ## How to Run listing?
 
 - Open folder with project
