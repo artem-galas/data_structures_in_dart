@@ -55,7 +55,8 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - `merge` - very simple implemintation merge 2 pre-sorted arrays.
   - `merge_sort` - Merge sorting array
   - `stack_triangle` - calculate triangle number with recursion and stack
-  - `stacl_triangle2` - calculate triangle number usign stack insted of recusion
+  - `stack_triangle2` - calculate triangle number usign stack insted of recusion
+  - `power` - X power Y using optimizing recursion method
 ## How to Run listing?
 
 - Open folder with project
