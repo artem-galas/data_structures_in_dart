@@ -57,6 +57,11 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - `stack_triangle` - calculate triangle number with recursion and stack
   - `stack_triangle2` - calculate triangle number usign stack insted of recusion
   - `power` - X power Y using optimizing recursion method
+### Chap07. Sorting
+  - `shell_sorting` - sorting used [Shell's Method](https://en.wikipedia.org/wiki/Shellsort)
+  - `partion`
+  - `quick_sort1` - Quick sort based on last elemnt of array
+  - `quick_sort2` - QuickSort based on median 
 ## How to Run listing?
 
 - Open folder with project
