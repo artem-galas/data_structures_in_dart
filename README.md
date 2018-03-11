@@ -61,7 +61,17 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - `shell_sorting` - sorting used [Shell's Method](https://en.wikipedia.org/wiki/Shellsort)
   - `partion`
   - `quick_sort1` - Quick sort based on last elemnt of array
-  - `quick_sort2` - QuickSort based on median 
+  - `quick_sort2` - QuickSort based on median
+### Chap08. Binary Tree
+  - `binary-tree` - Binary Search tree
+  ```bash
+                                  50
+                25                              75
+        12              37              --              87
+    --      --      30      43      --      --      --      93
+  --  --  --  --  --  33  --  --  --  --  --  --  --  --  --  97
+  ```
+
 ## How to Run listing?
 
 - Open folder with project
