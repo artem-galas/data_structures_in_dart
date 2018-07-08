@@ -60,7 +60,7 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
 ### Chap07. Sorting
   - `shell_sorting` - sorting used [Shell's Method](https://en.wikipedia.org/wiki/Shellsort)
   - `partion`
-  - `quick_sort1` - Quick sort based on last elemnt of array
+  - `quick_sort1` - Quick sort based on last element of array
   - `quick_sort2` - QuickSort based on median
 ### Chap08. Binary Tree
   - `binary-tree` - Binary Search tree
@@ -71,6 +71,16 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
     --      --      30      43      --      --      --      93
   --  --  --  --  --  33  --  --  --  --  --  --  --  --  --  97
   ```
+### Chap 09. Red-Black Tree
+  Unfortunately there no code.
+### Chap 10. Tree 2 3 4
+  - `tree2-3-4` - Tree 2 3 4
+  ```bash
+  Enter first letter of show, insert, find: s
+  Level = 0 child = 0 /50
+  Level = 1 child = 0 /30/40
+  Level = 1 child = 1 /60/70
+  ```    
 
 ## How to Run listing?
 
