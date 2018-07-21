@@ -83,6 +83,7 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   ```    
 ### Chap 11. Hash
 - `hash` - simple hash
+
 ```bash
 Enter size of hash table: 10
 Enter initial number of items: 8
@@ -96,6 +97,24 @@ Enter first leter of show, insert, delete, find:
 s
 HashTable: 120 151 150 193 173 118 100 ** 148 99 
 Enter first leter of show, insert, delete, find: 
+```
+
+- `hash_double` - Double Hash. It use two hashFunction:
+    - `hashFunc` - for find first index;
+    - `secondHashFunc` - for find the step (offset); 
+
+```bash
+Enter size of hash table: 10
+Enter initial number of items: 4
+Enter first leter of show, insert, delete, find: 
+s
+HashTable: ** 121 ** ** ** ** 196 137 138 ** 
+Enter first leter of show, insert, delete, find: 
+i
+Enter key value to insert: 100
+Enter first leter of show, insert, delete, find: 
+s
+HashTable: 100 121 ** ** ** ** 196 137 138 ** 
 ```
 
 
