@@ -7,7 +7,7 @@ class DataItem {
   DataItem(this.data) {}
 
   void displayItem() {
-    stdout.write('/${data}');
+    stdout.write('/$data');
   }
 }
 
@@ -202,7 +202,7 @@ class Tree234 {
   }
 
   void recursionDisplayTree(Node node, int level, int childNumber) {
-    stdout.write('Level = ${level} child = ${childNumber} ');
+    stdout.write('Level = $level child = $childNumber ');
     node.displayNode();
 
     int numItems = node.getNumItems();

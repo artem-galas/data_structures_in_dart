@@ -1,9 +1,9 @@
 import 'dart:io';
 
 class TowerApp {
-  static int nDisck = 3;
+  static int nDisk = 3;
 
-  static doTowers(int topN, String from, String inter, String to) {
+  static void doTowers(int topN, String from, String inter, String to) {
     if (topN == 1) {
       stdout.writeln('Disk 1 from $from to $to');
     } else {
@@ -15,5 +15,5 @@ class TowerApp {
 }
 
 void main(List<String> args) {
-  TowerApp.doTowers(TowerApp.nDisck, 'A', 'B', 'C');
+  TowerApp.doTowers(TowerApp.nDisk, 'A', 'B', 'C');
 }

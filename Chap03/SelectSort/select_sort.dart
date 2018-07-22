@@ -15,8 +15,9 @@ class ArraySelect {
   }
 
   void display() {
-    for(int i = 0; i < nElems; i++)
+    for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
+    }
     stdout.writeln();
   }
 
@@ -25,8 +26,9 @@ class ArraySelect {
     for(int out = 0; out < nElems - 1; out ++) {
       min = out;
       for(int _in = out + 1; _in < nElems; _in ++) {
-        if(a[_in] < a[min])
+        if(a[_in] < a[min]) {
           min = _in;
+        }
       }
       swap(out, min);
     }
@@ -39,7 +41,7 @@ class ArraySelect {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100;
   ArraySelect array = new ArraySelect(maxSize);
 

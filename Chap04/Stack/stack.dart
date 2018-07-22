@@ -32,7 +32,7 @@ class StackX {
   }
 }
 
-main() {
+void main() {
   StackX stack = new StackX(10);
   stack.push(20);
   stack.push(40);

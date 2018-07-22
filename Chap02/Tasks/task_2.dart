@@ -12,20 +12,24 @@ class HighArray {
 
   // Constructor
   HighArray(int max) {
-    a = new List(max);
+    a = new List<int>(max);
     nElems = 0;
   }
 
   // Find specified value
   bool find(int searchKey) {
     int j;
-    for(j = 0; j < nElems; j++)
-      if (a[j] == searchKey)
+    for(j = 0; j < nElems; j++) {
+      if (a[j] == searchKey) {
         break;
-    if (j == nElems)
+      }
+    }
+    if (j == nElems) {
       return false;
-    else
+    }
+    else {
       return true;
+    }
   }
 
   // Put element into array
@@ -37,23 +41,27 @@ class HighArray {
   // Delete element from array
   bool delete(int value) {
     int j;
-    for(j = 0; j < nElems; j++)
-      if(value == a[j])
+    for(j = 0; j < nElems; j++) {
+      if (value == a[j]) {
         break;
-    if(j == nElems)
+      }
+    }
+    if(j == nElems) {
       return false;
-    else {
-      for(int k = j; k < nElems; k++)
+    } else {
+      for(int k = j; k < nElems; k++) {
         a[k] = a[k + 1];
+      }
       nElems --;
       return true;
     }
   }
 
-  // Display Array contents
+  /// Display Array contents
   void display() {
-    for(int j = 0; j < nElems; j++)
+    for(int j = 0; j < nElems; j++) {
       stdout.write('${a[j]} ');
+    }
     stdout.writeln('');
   }
 
@@ -72,7 +80,7 @@ class HighArray {
 }
 
 
-main() {
+void main() {
   int maxSize = 100; // array size
   HighArray array = new HighArray(maxSize);
 

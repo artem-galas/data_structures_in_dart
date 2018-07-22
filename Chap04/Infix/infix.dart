@@ -102,10 +102,11 @@ class InfixToPostfix {
         break;
       } else {
         int prior;
-        if(opTop == '+' || opTop == '-')
+        if(opTop == '+' || opTop == '-') {
           prior = 1;
-        else
+        } else {
           prior = 2;
+        }
         if(prior < priority) {
           stackX.push(opTop);
           break;
@@ -120,10 +121,12 @@ class InfixToPostfix {
   void gotParent(String char) {
     while(!stackX.isEmpty()) {
       String charX = stackX.pop();
-      if(charX == '(')
+      if(charX == '(') {
         break;
-      else
+      }
+      else {
         output = output + charX;
+      }
     }
   }
 }

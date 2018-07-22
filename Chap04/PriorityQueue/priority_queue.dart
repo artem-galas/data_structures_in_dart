@@ -17,10 +17,11 @@ class PriorityQueue {
       queueArray[nItems++] = item;
     } else {
       for(j = nItems - 1; j >= 0; j --) {
-        if(item > queueArray[j])
-          queueArray[j+1] = queueArray[j];
-        else
+        if(item > queueArray[j]) {
+          queueArray[j + 1] = queueArray[j];
+        } else {
           break;
+        }
       }
       queueArray[j+1] = item;
       nItems ++;

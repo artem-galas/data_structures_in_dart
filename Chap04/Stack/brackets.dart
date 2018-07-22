@@ -75,7 +75,7 @@ class BracketChecker {
   }
 }
 
-main() {
+void main() {
   stdout.writeln('Enter a string: ');
   String input = stdin.readLineSync();
 

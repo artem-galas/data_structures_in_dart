@@ -6,7 +6,7 @@ class OrderedArray {
 
   // Constructor
   OrderedArray(int max) {
-    a = new List(max); // create array (List in Dart)
+    a = new List<int>(max); // create array (List in Dart)
     nElems = 0; // initialize items count
   }
 
@@ -14,7 +14,7 @@ class OrderedArray {
     return nElems;
   }
 
-  // Binary search
+  /// Binary search
   int find(int searchKey) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -22,15 +22,16 @@ class OrderedArray {
 
     while(true) {
       curIn = (lowerBound + upperBound) ~/ 2;
-      if(a[curIn] == searchKey)
+      if(a[curIn] == searchKey) {
         return curIn; // found It
-      else if (lowerBound > upperBound)
+      } else if (lowerBound > upperBound) {
         return nElems; // can't find it
-      else { // divide range
-        if(a[curIn] < searchKey)
+      } else { // divide range
+        if(a[curIn] < searchKey) {
           lowerBound = curIn + 1; // it's in upper half;
-        else
+        } else {
           upperBound = curIn - 1; // it's in lower half;
+        }
       }
     }
   }
@@ -38,22 +39,26 @@ class OrderedArray {
   // Put element into ordered array
   void insert(int value) {
     int j;
-    for(j = 0; j < nElems; j++) // find where it goes
-      if (a[j] > value) // liner search
+    for(j = 0; j < nElems; j++) { // find where it goes
+      if (a[j] > value) { // liner search
         break;
-    for(int k = nElems; k > j; k--) // move bigger ones up
-      a[k] = a[k-1];
+      }
+    }
+    for(int k = nElems; k > j; k--) { // move bigger ones up
+      a[k] = a[k - 1];
+    }
     a[j] = value; // insert it
     nElems++; // increment size
   }
 
   bool delete(int value) {
     int j = find(value);
-    if (j == nElems) // can't find it
+    if (j == nElems) { // can't find it
       return false;
-    else { // found it
-      for(int k = j; k > j; k++) // move bigger ones down
+    } else { // found it
+      for(int k = j; k > j; k++) { // move bigger ones down
         a[k] = a[k + 1];
+      }
       nElems--; // decrement size
       return true;
     }
@@ -61,13 +66,14 @@ class OrderedArray {
 
   // Display array contents
   void display() {
-    for(int j = 0; j < nElems; j ++) // for each element
+    for(int j = 0; j < nElems; j ++) { // for each element
       stdout.write('${a[j]} '); // display it
+    }
     stdout.writeln('');
   }
 }
 
-main() {
+void main() {
   int maxSize = 100; // array size
   OrderedArray array = new OrderedArray(maxSize); // // create instance of OrderedArray
 
@@ -86,10 +92,11 @@ main() {
   // Search item
   int searchKey = 55;
 
-  if(array.find(searchKey) != array.size())
+  if(array.find(searchKey) != array.size()) {
     stdout.writeln('Found $searchKey');
-  else
+  } else {
     stdout.writeln("Can't find $searchKey");
+  }
 
   // Display items
   array.display();

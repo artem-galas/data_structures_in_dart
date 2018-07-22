@@ -6,54 +6,66 @@ class HighArray {
 
   // Constructor
   HighArray(int max) {
-    a = new List(max); // create array (List in Dart)
+    a = new List<int>(max); // create array (List in Dart)
     nElems = 0; // initialize items count
   }
 
-  // Find specified value
+  /// Find specified value
   bool find(int searchKey) {
     int j;
-    for(j = 0; j < nElems; j++) // for each element
-      if (a[j] == searchKey) // found item?
+    // for each element
+    for(j = 0; j < nElems; j++) {
+      // found item?
+      if (a[j] == searchKey) {
         break; // exit loop before end
-    if (j == nElems) // gone to end?
-      return false; // yes, can't find it
-    else
-      return true; // no, found it
+      }
+    }
+    // is end of array
+    if (j == nElems) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
-  // Put element into array
+  /// Insert element into array
   void insert(int value) {
     a[nElems] = value; // insert it
     nElems ++; // increment size
   }
 
-  // Delete element from array
+  /// Delete element from array
   bool delete(int value) {
     int j;
-    for(j = 0; j < nElems; j++) // look for it
-      if(value == a[j])
+    for(j = 0; j < nElems; j++) {
+      if (value == a[j]) {
         break;
-    if(j == nElems) // can't find it
-      return false;
-    else { //found it
-      for(int k = j; k < nElems; k++)
-        a[k] = a[k + 1];
-      nElems --;
-      return true;
+      }
     }
+
+    if(j == nElems) {
+      return false;
+    } else {
+      for (int k = j; k < nElems; k++) {
+        a[k] = a[k + 1];
+      }
+    }
+    nElems --;
+    return true;
   }
 
-  // Display Array contents
+  /// Display Array contents
   void display() {
-    for(int j = 0; j < nElems; j++) // for each element
+    // for each element
+    for(int j = 0; j < nElems; j++) {
       stdout.write('${a[j]} '); // display it
+    }
     stdout.writeln(''); // add new line on the end
   }
 }
 
 
-main() {
+void main() {
   int maxSize = 100; // array size
   HighArray array = new HighArray(maxSize); // create instance of HighArray
 
@@ -74,10 +86,11 @@ main() {
 
   // Search Element
   int searchKey = 35;
-  if(array.find(searchKey))
-    stdout.writeln('Foundt $searchKey');
-  else
+  if(array.find(searchKey)) {
+    stdout.writeln('Found $searchKey');
+  } else {
     stdout.writeln("Can't find $searchKey");
+  }
 
   // Delete 3 items
   array.delete(00);

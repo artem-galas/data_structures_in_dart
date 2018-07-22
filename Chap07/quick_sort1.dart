@@ -43,8 +43,8 @@ class ArrayIns {
     int rightPtr = right;
 
     while (true) {
-      while (array[++leftPtr] < pivot);
-      while (rightPtr > 0 && array[--rightPtr] > pivot);
+      while (array[++leftPtr] < pivot) {};
+      while (rightPtr > 0 && array[--rightPtr] > pivot) {};
 
       if (leftPtr >= rightPtr) {
         break;

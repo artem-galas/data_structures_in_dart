@@ -26,8 +26,8 @@ class MergeApp {
 }
 
 void main(List<String> args) {
-  List<int> arrayA = [23, 47, 81, 95];
-  List<int> arrayB = [7, 14, 39, 55, 62, 74];
+  List<int> arrayA = <int>[23, 47, 81, 95];
+  List<int> arrayB = <int>[7, 14, 39, 55, 62, 74];
   List<int> arrayC = new List<int>(10);
 
   MergeApp.merge(arrayA, arrayA.length, arrayB, arrayB.length, arrayC);

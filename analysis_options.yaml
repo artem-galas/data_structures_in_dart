@@ -1,5 +1,4 @@
 analyzer:
-  strong-mode: true
 #   exclude:
 #     - path/to/excluded/files/**
 
@@ -15,3 +14,10 @@ linter:
     - valid_regexps
     - library_prefixes
     - library_names
+    - unnecessary_brace_in_string_interps
+    - always_declare_return_types
+    - always_specify_types
+    - camel_case_types
+    - file_names
+    - no_duplicate_case_values
+    - curly_braces_in_flow_control_structures

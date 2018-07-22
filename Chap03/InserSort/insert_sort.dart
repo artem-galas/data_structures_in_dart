@@ -15,8 +15,9 @@ class ArrayInsert {
   }
 
   void display() {
-    for(int i = 0; i < nElems; i++)
+    for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
+    }
     stdout.writeln();
   }
 
@@ -34,7 +35,7 @@ class ArrayInsert {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100;
   ArrayInsert array = new ArrayInsert(maxSize);
 

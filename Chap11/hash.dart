@@ -16,9 +16,9 @@ class HashTable {
   List<DataItem> hashArray;
   DataItem nonItem;
 
-  HashTable(size) {
+  HashTable(int size) {
     this.arraySize = size;
-    hashArray = new List(size);
+    hashArray = new List<DataItem>(size);
     nonItem = new DataItem(-1);
   }
 
@@ -89,7 +89,7 @@ class HashTable {
 
 void main() {
   DataItem dataItem;
-  int key, size, n, keysPerCel;;
+  int key, size, n;
 
   Random random = new Random();
 
@@ -99,8 +99,6 @@ void main() {
 
   stdout.write('Enter initial number of items: ');
   n = int.parse(stdin.readLineSync());
-
-  keysPerCel = 10;
 
   // make table
   HashTable hashTable = new HashTable(size);
@@ -136,9 +134,9 @@ void main() {
         key = int.parse(stdin.readLineSync());
         dataItem = hashTable.find(key);
         if (dataItem != null) {
-          stdout.writeln('Found ${key}');
+          stdout.writeln('Found $key');
         } else {
-          stdout.writeln('Could NOT found ${key}');
+          stdout.writeln('Could NOT found $key');
         }
         break;
       default:

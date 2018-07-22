@@ -33,10 +33,11 @@ class ArrayInObject {
     nElems ++; // increment size
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
-    for(int j = 0; j < nElems; j++)
+    for(int j = 0; j < nElems; j++) {
       a[j].displayPerson();
+    }
   }
 
   void insertionSort() {
@@ -53,7 +54,7 @@ class ArrayInObject {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100; // array size
   ArrayInObject array = new ArrayInObject (maxSize); // create instance of ArrayInObject
 
