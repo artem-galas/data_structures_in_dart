@@ -9,11 +9,13 @@ class ArraySelect {
     nElems = 0;
   }
 
+  /// Insert new element
   void insert(int value) {
     a[nElems] = value;
     nElems ++;
   }
 
+  /// Display Array contents
   void display() {
     for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
@@ -21,6 +23,7 @@ class ArraySelect {
     stdout.writeln();
   }
 
+  /// Select Sort Array
   void selectSort() {
     int min;
     for(int out = 0; out < nElems - 1; out ++) {
@@ -34,6 +37,7 @@ class ArraySelect {
     }
   }
 
+  /// Swap elements
   void swap(int one, int two) {
     int temp = a[one];
     a[one] = a[two];

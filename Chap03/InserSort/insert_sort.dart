@@ -9,11 +9,13 @@ class ArrayInsert {
     nElems = 0;
   }
 
+  /// Insert Item to array
   void insert(int value) {
     a[nElems] = value;
     nElems ++;
   }
 
+  /// Display Array contents
   void display() {
     for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
@@ -21,6 +23,7 @@ class ArrayInsert {
     stdout.writeln();
   }
 
+  /// Insert Sort Array
   void insertSort() {
     int _in, out;
     for(out = 0; out < nElems; out ++) {

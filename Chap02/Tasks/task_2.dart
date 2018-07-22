@@ -26,19 +26,18 @@ class HighArray {
     }
     if (j == nElems) {
       return false;
-    }
-    else {
+    } else {
       return true;
     }
   }
 
-  // Put element into array
+  /// Put element into array
   void insert(int value) {
     a[nElems] = value;
     nElems ++;
   }
 
-  // Delete element from array
+  /// Delete element from array
   bool delete(int value) {
     int j;
     for(j = 0; j < nElems; j++) {
@@ -65,6 +64,7 @@ class HighArray {
     stdout.writeln('');
   }
 
+  /// Remove Max value
   int removeMax() {
     int j;
     int max = a[0];

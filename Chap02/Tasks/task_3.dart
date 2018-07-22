@@ -66,6 +66,7 @@ class HighArray {
     stdout.writeln('');
   }
 
+  /// Remove Max
   int removeMax() {
     int j;
     int max = a[0];

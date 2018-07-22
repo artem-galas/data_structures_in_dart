@@ -66,6 +66,7 @@ class HighArray {
     stdout.writeln('');
   }
 
+  /// Find Max value
   int getMax() {
     if (nElems == 0) {
       return -1;

@@ -40,12 +40,12 @@ class DataArray {
     }
     if(j == nElems) {
       return null; // can't find it
-    }
-    else {
+    } else {
       return a[j]; // found it
     }
   }
 
+  /// Insert Data to Array
   void insert(String lastName, String firstName, int age) {
     a[nElems] = new Person(lastName, firstName, age);
     nElems ++; // increment size

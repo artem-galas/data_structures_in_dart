@@ -39,6 +39,7 @@ class BracketChecker {
     input = _input;
   }
 
+  /// Check if all brackets are closed
   void check() {
     int stackSize = input.length;
     StackString stack = new StackString(stackSize);

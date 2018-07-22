@@ -8,6 +8,7 @@ class Person {
   // Constructor shorthand
   Person(this.lastName, this.firstName, this.age) {}
 
+  /// Display Person Data
   void displayPerson() {
     stdout.write('Last Name $lastName, ');
     stdout.write('First Name $firstName, ');
@@ -28,6 +29,7 @@ class ArrayInObject {
     nElems = 0;
   }
 
+  /// Insert Data to Array
   void insert(String lastName, String firstName, int age) {
     a[nElems] = new Person(lastName, firstName, age);
     nElems ++; // increment size
@@ -40,6 +42,7 @@ class ArrayInObject {
     }
   }
 
+  /// Insertion Sort array
   void insertionSort() {
     int _in, out;
     for(out = 1; out < nElems; out ++) {

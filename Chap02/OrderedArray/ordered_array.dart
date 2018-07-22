@@ -36,7 +36,7 @@ class OrderedArray {
     }
   }
 
-  // Put element into ordered array
+  /// Insert element into ordered array
   void insert(int value) {
     int j;
     for(j = 0; j < nElems; j++) { // find where it goes
@@ -51,6 +51,7 @@ class OrderedArray {
     nElems++; // increment size
   }
 
+  /// Delete element from array
   bool delete(int value) {
     int j = find(value);
     if (j == nElems) { // can't find it
@@ -64,7 +65,7 @@ class OrderedArray {
     }
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
     for(int j = 0; j < nElems; j ++) { // for each element
       stdout.write('${a[j]} '); // display it

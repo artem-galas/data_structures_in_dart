@@ -11,6 +11,7 @@ class PriorityQueue {
     nItems = 0;
   }
 
+  /// Insert Data to Queue
   void insert(int item) {
     int j;
     if (nItems == 0) {
@@ -28,6 +29,7 @@ class PriorityQueue {
     }
   }
 
+  /// Remove data
   int remove() {
     return queueArray[--nItems];
   }

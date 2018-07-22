@@ -19,7 +19,7 @@ class OrderedArray {
     return nElems;
   }
 
-  // Binary search
+  /// Binary search
   int find(int searchKey) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -41,7 +41,7 @@ class OrderedArray {
     }
   }
 
-  // Put element into ordered array
+  /// Put element into ordered array
   void insert(int value) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -65,6 +65,7 @@ class OrderedArray {
     nElems++;
   }
 
+  /// Delete Element from array
   bool delete(int value) {
     int j = find(value);
     if (j == nElems) {
@@ -79,7 +80,7 @@ class OrderedArray {
     }
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
     for(int j = 0; j < nElems; j ++) {
       stdout.write('${a[j]} ');
