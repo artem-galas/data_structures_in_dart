@@ -8,6 +8,7 @@ class Person {
   // Constructor shorthand
   Person(this.lastName, this.firstName, this.age) {}
 
+  /// Display Person Data
   void displayPerson() {
     stdout.write('Last Name $lastName, ');
     stdout.write('First Name $firstName, ');
@@ -28,17 +29,20 @@ class ArrayInObject {
     nElems = 0;
   }
 
+  /// Insert Data to Array
   void insert(String lastName, String firstName, int age) {
     a[nElems] = new Person(lastName, firstName, age);
     nElems ++; // increment size
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
-    for(int j = 0; j < nElems; j++)
+    for(int j = 0; j < nElems; j++) {
       a[j].displayPerson();
+    }
   }
 
+  /// Insertion Sort array
   void insertionSort() {
     int _in, out;
     for(out = 1; out < nElems; out ++) {
@@ -53,7 +57,7 @@ class ArrayInObject {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100; // array size
   ArrayInObject array = new ArrayInObject (maxSize); // create instance of ArrayInObject
 

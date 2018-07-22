@@ -57,7 +57,7 @@ class Reverser {
   }
 }
 
-main() {
+void main() {
   String input, output;
 
   stdout.writeln('Enter a string: ');

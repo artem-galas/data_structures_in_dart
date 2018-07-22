@@ -55,7 +55,7 @@ void displayArray(List<Link> array) {
 void main(List<String> args) {
   int size = 10;
   Random random = new Random();
-  List<Link> linkArray = new List(size);
+  List<Link> linkArray = new List<Link>(size);
 
   for(int i = 0; i < linkArray.length; i ++) {
     int n = random.nextInt(100);

@@ -192,7 +192,7 @@ class Tree {
   }
 
   void displayTree() {
-    Queue globalQueue = new Queue();
+    Queue<Node> globalQueue = new Queue<Node>();
     globalQueue.addLast(root);
     int nBlanks = 32;
     bool isRowEmpty = false;
@@ -200,7 +200,7 @@ class Tree {
       "............................................."
     );
     while (isRowEmpty == false) {
-      Queue localQueue = new Queue();
+      Queue<Node> localQueue = new Queue<Node>();
       isRowEmpty = true;
       for (int i = 0; i < nBlanks; i ++) {
         stdout.write(' ');

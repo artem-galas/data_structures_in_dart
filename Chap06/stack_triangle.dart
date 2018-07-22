@@ -86,7 +86,7 @@ class StackTriangleApp {
 }
 
 
-main() {
+void main() {
   stdout.write('Enter a number: ');
   StackTriangleApp.number = int.parse(stdin.readLineSync());
   StackTriangleApp.recTriangle();

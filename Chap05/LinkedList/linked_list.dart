@@ -11,7 +11,7 @@ class Link {
     next = null;
   }
 
-  displayLink() {
+  void displayLink() {
     stdout.write('{ $intData, $doubleData } ');
   }
 }
@@ -36,10 +36,11 @@ class LinkList {
   Link find(int key) {
     Link current = first;
     while(current.intData != key) {
-      if(current.next == null)
+      if(current.next == null) {
         return null;
-      else
+      } else {
         current = current.next;
+      }
     }
     return current;
   }

@@ -11,17 +11,17 @@ class StackX {
     top = -1;
   }
 
-  // Put item on top of stack
+  /// Put item on top of stack
   void push(String item) {
     stackArray[++top] = item;
   }
 
-  // Take item from top of stack
+  /// Take item from top of stack
   String pop() {
     return stackArray[top--];
   }
 
-  // Peek at top of stack
+  /// Peek at top of stack
   String peek() {
     return stackArray[top];
   }
@@ -38,6 +38,7 @@ class StackX {
     return stackArray[n];
   }
 
+  /// Display Stack Data
   void displayStack(String s) {
     stdout.write(s);
     stdout.write('Stack (bottom -> top): ');
@@ -59,7 +60,7 @@ class InfixToPostfix {
     stackX = new StackX(stackSize);
   }
 
-  // Do translation to postfix
+  /// Do translation to postfix
   String doTranslation() {
     // for each char
     for(int i = 0; i < input.length; i++) {
@@ -102,10 +103,11 @@ class InfixToPostfix {
         break;
       } else {
         int prior;
-        if(opTop == '+' || opTop == '-')
+        if(opTop == '+' || opTop == '-') {
           prior = 1;
-        else
+        } else {
           prior = 2;
+        }
         if(prior < priority) {
           stackX.push(opTop);
           break;
@@ -120,10 +122,12 @@ class InfixToPostfix {
   void gotParent(String char) {
     while(!stackX.isEmpty()) {
       String charX = stackX.pop();
-      if(charX == '(')
+      if(charX == '(') {
         break;
-      else
+      }
+      else {
         output = output + charX;
+      }
     }
   }
 }

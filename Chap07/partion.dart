@@ -32,8 +32,8 @@ class ArrayPart {
     int rightPtr = right + 1;
 
     while (true) {
-      while (leftPtr < right && array[++leftPtr] < pivot);
-      while (rightPtr > left && array[--rightPtr] > pivot);
+      while (leftPtr < right && array[++leftPtr] < pivot) {};
+      while (rightPtr > left && array[--rightPtr] > pivot) {};
 
       if (leftPtr >= rightPtr) {
         break;

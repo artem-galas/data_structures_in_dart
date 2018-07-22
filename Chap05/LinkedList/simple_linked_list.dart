@@ -11,7 +11,7 @@ class Link {
     next = null;
   }
 
-  displayLink() {
+  void displayLink() {
     stdout.write('{ $intData, $doubleData } ');
   }
 }

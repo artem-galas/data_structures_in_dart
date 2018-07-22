@@ -5,7 +5,7 @@ class LowArray {
 
   // Constructor
   LowArray(int size) {
-    a = new List(size); // create array (List in Dart)
+    a = new List<int>(size); // create array (List in Dart)
   }
 
   // set value
@@ -19,7 +19,7 @@ class LowArray {
   }
 }
 
-main(List<String> arguments) {
+void main(List<String> arguments) {
   LowArray array = new LowArray(100); // create LowArray instance
   int nElement = 0; // number of items in array
   int j; // loop variable
@@ -40,35 +40,45 @@ main(List<String> arguments) {
   nElement = 10;
 
   // Display items
-  for(j = 0; j < nElement; j++)
+  for(j = 0; j < nElement; j++) {
     stdout.write('${array.getElement(j)} ');
+  }
   stdout.writeln('');
 
   // Element Search
   int searchKey = 26;
 
-  for(j = 0; j < nElement; j++) // for each element
-    if(array.getElement(j) == searchKey) // found item?
+  // for each element
+  for(j = 0; j < nElement; j++) {
+    // found item?
+    if (array.getElement(j) == searchKey) {
       break;
+    }
+  }
 
-  if(j == nElement) // not found
+  if(j == nElement) {
     stdout.writeln("Can't find $searchKey");
-  else // yes found
-    stdout.writeln('Found ${searchKey}');
+  } else {
+    stdout.writeln('Found $searchKey');
+  }
 
   // Delete Element with key 55
-  for(j = 0; j < nElement; j++)
-    if(array.getElement(j) == 55)
+  for(j = 0; j < nElement; j++) {
+    if (array.getElement(j) == 55) {
       break;
+    }
+  }
   // Higher ones down
-  for(int k = j; k < nElement; k++)
-    array.setElement(k, array.getElement(k+1));
+  for(int k = j; k < nElement; k++) {
+    array.setElement(k, array.getElement(k + 1));
+  }
   nElement --; // decrement size
 
 
   // Display items
-  for(int j = 0; j < nElement; j++)
+  for(int j = 0; j < nElement; j++) {
     stdout.write('${array.getElement(j)} ');
+  }
   stdout.writeln('');
 
 }

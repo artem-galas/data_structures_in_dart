@@ -9,29 +9,35 @@ class ArraySelect {
     nElems = 0;
   }
 
+  /// Insert new element
   void insert(int value) {
     a[nElems] = value;
     nElems ++;
   }
 
+  /// Display Array contents
   void display() {
-    for(int i = 0; i < nElems; i++)
+    for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
+    }
     stdout.writeln();
   }
 
+  /// Select Sort Array
   void selectSort() {
     int min;
     for(int out = 0; out < nElems - 1; out ++) {
       min = out;
       for(int _in = out + 1; _in < nElems; _in ++) {
-        if(a[_in] < a[min])
+        if(a[_in] < a[min]) {
           min = _in;
+        }
       }
       swap(out, min);
     }
   }
 
+  /// Swap elements
   void swap(int one, int two) {
     int temp = a[one];
     a[one] = a[two];
@@ -39,7 +45,7 @@ class ArraySelect {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100;
   ArraySelect array = new ArraySelect(maxSize);
 

@@ -6,7 +6,7 @@ class Link {
 
   Link(this.data) {}
 
-  displayLink() {
+  void displayLink() {
     stdout.write('$data ');
   }
 }

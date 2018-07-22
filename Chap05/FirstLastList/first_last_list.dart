@@ -6,7 +6,7 @@ class Link {
 
   Link(this.intData) {}
 
-  displayLink() {
+  void displayLink() {
     stdout.write('$intData ');
   }
 }

@@ -29,46 +29,57 @@ class DataArray {
     nElems = 0; // initialize items count
   }
 
-  // Find specified value (Liner search)
+  /// Find specified value (Liner search)
   Person find(String searchName) {
     int j;
-    for(j = 0; j < nElems; j++) // for each element
-      if(a[j].getLastName() == searchName) // found item?
+    // for each element
+    for(j = 0; j < nElems; j++) {
+      if(a[j].getLastName() == searchName) {
         break; // exit loop before end
-    if(j == nElems) // gone to end?
-      return null; // yes, can't find it
-    else
-      return a[j]; // np found it
+      }
+    }
+    if(j == nElems) {
+      return null; // can't find it
+    } else {
+      return a[j]; // found it
+    }
   }
 
+  /// Insert Data to Array
   void insert(String lastName, String firstName, int age) {
     a[nElems] = new Person(lastName, firstName, age);
     nElems ++; // increment size
   }
 
-  // Delete person from array
+  /// Delete person from array
   bool delete(String searchName) {
     int j;
-    for(j = 0; j < nElems; j++)
-      if(a[j].getLastName() == searchName)
+    for(j = 0; j < nElems; j++) {
+      if (a[j].getLastName() == searchName) {
         break;
-    if (j == nElems)
+      }
+    }
+    if (j == nElems) {
       return false;
-    else
-      for(int k = j; k < nElems; k ++) // shift down
+    } else {
+      // shift down
+      for (int k = j; k < nElems; k ++) {
         a[k] = a[k + 1];
+      }
+    }
     nElems --; // decrement size
     return true;
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
-    for(int j = 0; j < nElems; j++)
+    for(int j = 0; j < nElems; j++) {
       a[j].displayPerson();
+    }
   }
 }
 
-main() {
+void main() {
   int maxSize = 100; // array size
   DataArray array = new DataArray(maxSize); // create instance of DataArray
 

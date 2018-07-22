@@ -11,22 +11,25 @@ class PriorityQueue {
     nItems = 0;
   }
 
+  /// Insert Data to Queue
   void insert(int item) {
     int j;
     if (nItems == 0) {
       queueArray[nItems++] = item;
     } else {
       for(j = nItems - 1; j >= 0; j --) {
-        if(item > queueArray[j])
-          queueArray[j+1] = queueArray[j];
-        else
+        if(item > queueArray[j]) {
+          queueArray[j + 1] = queueArray[j];
+        } else {
           break;
+        }
       }
       queueArray[j+1] = item;
       nItems ++;
     }
   }
 
+  /// Remove data
   int remove() {
     return queueArray[--nItems];
   }

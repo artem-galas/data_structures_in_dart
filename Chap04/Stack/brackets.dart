@@ -39,6 +39,7 @@ class BracketChecker {
     input = _input;
   }
 
+  /// Check if all brackets are closed
   void check() {
     int stackSize = input.length;
     StackString stack = new StackString(stackSize);
@@ -75,7 +76,7 @@ class BracketChecker {
   }
 }
 
-main() {
+void main() {
   stdout.writeln('Enter a string: ');
   String input = stdin.readLineSync();
 

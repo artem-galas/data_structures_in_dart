@@ -10,7 +10,7 @@ class PowerApp {
   }
 }
 
-main() {
+void main() {
   stdout.write('Enter X ');
   int x = int.parse(stdin.readLineSync());
   stdout.write('Enter Y ');

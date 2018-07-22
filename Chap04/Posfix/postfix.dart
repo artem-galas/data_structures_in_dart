@@ -11,17 +11,17 @@ class StackX {
     top = -1;
   }
 
-  // Put item on top of stack
+  /// Put item on top of stack
   void push(int item) {
     stackArray[++top] = item;
   }
 
-  // Take item from top of stack
+  /// Take item from top of stack
   int pop() {
     return stackArray[top--];
   }
 
-  // Peek at top of stack
+  /// Peek at top of stack
   int peek() {
     return stackArray[top];
   }
@@ -38,6 +38,7 @@ class StackX {
     return stackArray[n];
   }
 
+  /// Display Stack Data
   void displayStack(String s) {
     stdout.write(s);
     stdout.write('Stack (bottom -> top): ');

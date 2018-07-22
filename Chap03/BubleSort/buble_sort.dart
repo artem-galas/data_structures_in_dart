@@ -9,17 +9,21 @@ class ArrayBub {
     nElems = 0;
   }
 
+  /// Insert Data
   void insert(int value) {
     a[nElems] = value;
     nElems ++;
   }
 
+  /// Display Data
   void display() {
-    for(int i = 0; i < nElems; i++)
+    for(int i = 0; i < nElems; i++) {
       stdout.write('${a[i]} ');
+    }
     stdout.writeln();
   }
 
+  /// Bubble Array Sort
   void bubbleSort() {
     for(int out = nElems - 1; out > 1; out --) {
       for(int _in = 0; _in < out; _in ++) {
@@ -30,6 +34,7 @@ class ArrayBub {
     }
   }
 
+  /// Swap elements
   void swap(int one, int two) {
     int temp = a[one];
     a[one] = a[two];
@@ -37,7 +42,7 @@ class ArrayBub {
   }
 }
 
-main() {
+void main() {
   int maxSize = 100;
   ArrayBub array = new ArrayBub(maxSize);
 

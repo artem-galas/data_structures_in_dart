@@ -60,8 +60,8 @@ class ArrayIns {
     int rightPtr = right - 1;
 
     while (true) {
-      while (array[++leftPtr] < pivot);
-      while (array[--rightPtr] > pivot);
+      while (array[++leftPtr] < pivot) {};
+      while (array[--rightPtr] > pivot) {};
 
       if (leftPtr >= rightPtr) {
         break;

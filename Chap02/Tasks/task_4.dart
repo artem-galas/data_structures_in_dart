@@ -11,7 +11,7 @@ class OrderedArray {
 
   // Constructor
   OrderedArray(int max) {
-    a = new List(max);
+    a = new List<int>(max);
     nElems = 0;
   }
 
@@ -19,7 +19,7 @@ class OrderedArray {
     return nElems;
   }
 
-  // Binary search
+  /// Binary search
   int find(int searchKey) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -27,20 +27,21 @@ class OrderedArray {
 
     while(true) {
       curIn = (lowerBound + upperBound) ~/ 2;
-      if(a[curIn] == searchKey)
+      if(a[curIn] == searchKey) {
         return curIn;
-      else if (lowerBound > upperBound)
+      } else if (lowerBound > upperBound) {
         return nElems; // can't find it
-      else {
-        if(a[curIn] < searchKey)
+      } else {
+        if(a[curIn] < searchKey) {
           lowerBound = curIn + 1;
-        else
+        } else {
           upperBound = curIn - 1;
+        }
       }
     }
   }
 
-  // Put element into ordered array
+  /// Put element into ordered array
   void insert(int value) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -57,33 +58,38 @@ class OrderedArray {
       }
     }
 
-    for(int k = nElems; k > j; k--)
-      a[k] = a[k-1];
+    for(int k = nElems; k > j; k--) {
+      a[k] = a[k - 1];
+    }
     a[j] = value;
     nElems++;
   }
 
+  /// Delete Element from array
   bool delete(int value) {
     int j = find(value);
-    if (j == nElems)
+    if (j == nElems) {
       return false;
+    }
     else {
-      for(int k = j; k > j; k++)
+      for(int k = j; k > j; k++) {
         a[k] = a[k + 1];
+      }
       nElems--;
       return true;
     }
   }
 
-  // Display array contents
+  /// Display array contents
   void display() {
-    for(int j = 0; j < nElems; j ++)
+    for(int j = 0; j < nElems; j ++) {
       stdout.write('${a[j]} ');
+    }
     stdout.writeln('');
   }
 }
 
-main() {
+void main() {
   int maxSize = 100;
   OrderedArray array = new OrderedArray(maxSize);
 
