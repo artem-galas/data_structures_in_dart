@@ -1,8 +1,7 @@
-name: AlgorithmsDart
-description: A sample command-line application.
+name: Date Structures in Dart
 version: 0.0.1
 #homepage: https://www.example.com
-#author: artemgalas <email@example.com>
+author: artem_galas <artem.galas@gmail.com>
 
 environment:
   sdk: '>=1.20.1 <2.0.0'
