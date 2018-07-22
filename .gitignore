@@ -11,3 +11,5 @@ doc/api/
 
 .idea
 .vscode/
+
+.DS_Store
