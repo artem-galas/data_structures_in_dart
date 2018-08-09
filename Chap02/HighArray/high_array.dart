@@ -46,12 +46,12 @@ class HighArray {
     if(j == nElems) {
       return false;
     } else {
-      for (int k = j; k < nElems; k++) {
+      for (int k = j; k < nElems - 1; k++) {
         a[k] = a[k + 1];
       }
+      nElems --;
+      return true;
     }
-    nElems --;
-    return true;
   }
 
   /// Display Array contents
@@ -66,7 +66,7 @@ class HighArray {
 
 
 void main() {
-  int maxSize = 100; // array size
+  int maxSize = 10; // array size
   HighArray array = new HighArray(maxSize); // create instance of HighArray
 
   // Insert 10 items
@@ -77,7 +77,7 @@ void main() {
   array.insert(22);
   array.insert(88);
   array.insert(11);
-  array.insert(00);
+  array.insert(0);
   array.insert(66);
   array.insert(33);
 
@@ -93,7 +93,7 @@ void main() {
   }
 
   // Delete 3 items
-  array.delete(00);
+  array.delete(0);
   array.delete(55);
   array.delete(99);
 

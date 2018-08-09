@@ -1,90 +1,41 @@
+/// The removeMax() method in `task_2.dart` suggests a way to sort the contents of an array by key value.
+/// Implement a sorting scheme that does not require modifying the HighArray class, but only the code in main().
+/// You’ll need a second array, which will end up inversely sorted.
+/// (This scheme is a rather crude variant of the selection sort in Chap03, 'Simple Sorting.)
+
 import 'dart:io';
-/**
-  The removeMax() method in Programming Project 2.2 suggests a way to sort the contents of an array by key value.
-  Implement a sorting scheme that does not require modifying the HighArray class,
-  but only the code in main().
-  You’ll need a second array, which will end up inversely sorted.
-  (This scheme is a rather crude variant of the selection sort in Chapter 3, “Simple Sorting.”)
- **/
 
-class HighArray {
-  List<int> a;
-  int nElems;
+import '../HighArray/high_array.dart';
 
-  // Constructor
-  HighArray(int max) {
-    a = new List<int>(max);
-    nElems = 0;
-  }
+class HighArrayTask3 extends HighArray {
 
-  /// Find specified value
-  bool find(int searchKey) {
-    int j;
-    for(j = 0; j < nElems; j++) {
-      if (a[j] == searchKey) {
-        break;
-      }
-    }
-    if (j == nElems) {
-      return false;
-    } else {
-      return true;
-    }
-  }
+  HighArrayTask3(int max): super(max);
 
-  /// Insert element into array
-  void insert(int value) {
-    a[nElems] = value;
-    nElems ++;
-  }
-
-  /// Delete element from array
-  bool delete(int value) {
-    int j;
-    for(j = 0; j < nElems; j++) {
-      if (value == a[j]) {
-        break;
-      }
-    }
-
-    if(j == nElems) {
-      return false;
-    } else {
-      for(int k = j; k < nElems; k++) {
-        a[k] = a[k + 1];
-      }
-      nElems --;
-      return true;
-    }
-  }
-
-  /// Display Array contents
-  void display() {
-    for(int j = 0; j < nElems; j++) {
-      stdout.write('${a[j]} ');
-    }
-    stdout.writeln('');
-  }
-
-  /// Remove Max
+  /// Remove Max value
   int removeMax() {
-    int j;
     int max = a[0];
-    for(j = 0; j < nElems; j++) {
-      if(a[j] > max) {
-        max = a[j];
-        break;
+    int maxIndex = 0;
+
+    for(int i = 0; i < nElems; i++) {
+      if(a[i] > max) {
+        max = a[i];
+        maxIndex = i;
       }
     }
-    delete(max);
+
+    for(int k = maxIndex; k < nElems - 1; k ++) {
+      a[k] = a[k + 1];
+    }
+    nElems --;
+
     return max;
   }
 }
 
 
 void main() {
-  int maxSize = 100; // array size
-  HighArray array = new HighArray(maxSize);
+  int maxSize = 11; // array size
+  HighArrayTask3 array = new HighArrayTask3(maxSize);
 
   // Insert 10 items
   array.insert(77);
@@ -102,11 +53,11 @@ void main() {
   array.display();
 
   int length = array.nElems;
-  HighArray b = new HighArray(maxSize);
+  HighArray orderedArray = new HighArray(maxSize);
   for(int i = 0; i < length; i++) {
     int item = array.removeMax();
-    b.insert(item);
+    orderedArray.insert(item);
   }
 
-  b.display();
+  orderedArray.display();
 }

@@ -1,47 +1,20 @@
-/**
- * Modify the orderedArray.java program (Listing 2.4) so that the insert() and delete()
- * routines, as well as find(), use a binary search, as suggested in the text.
- */
+/// Modify the `ordered_array.dart` so that the insert() and delete()
+/// routines, as well as find(), use a binary search, as suggested in the text.
 
 import 'dart:io';
 
-class OrderedArray {
+import '../OrderedArray/ordered_array.dart';
+
+class OrderedArrayTask4 extends OrderedArray {
   List<int> a;
   int nElems;
 
   // Constructor
-  OrderedArray(int max) {
-    a = new List<int>(max);
-    nElems = 0;
-  }
+  OrderedArrayTask4(int max)
+      : super(max);
 
-  int size() {
-    return nElems;
-  }
-
-  /// Binary search
-  int find(int searchKey) {
-    int lowerBound = 0;
-    int upperBound = nElems - 1;
-    int curIn;
-
-    while(true) {
-      curIn = (lowerBound + upperBound) ~/ 2;
-      if(a[curIn] == searchKey) {
-        return curIn;
-      } else if (lowerBound > upperBound) {
-        return nElems; // can't find it
-      } else {
-        if(a[curIn] < searchKey) {
-          lowerBound = curIn + 1;
-        } else {
-          upperBound = curIn - 1;
-        }
-      }
-    }
-  }
-
-  /// Put element into ordered array
+  /// Put element into ordered array using Binary Search
+  @override
   void insert(int value) {
     int lowerBound = 0;
     int upperBound = nElems - 1;
@@ -66,6 +39,7 @@ class OrderedArray {
   }
 
   /// Delete Element from array
+  @override
   bool delete(int value) {
     int j = find(value);
     if (j == nElems) {
@@ -79,19 +53,11 @@ class OrderedArray {
       return true;
     }
   }
-
-  /// Display array contents
-  void display() {
-    for(int j = 0; j < nElems; j ++) {
-      stdout.write('${a[j]} ');
-    }
-    stdout.writeln('');
-  }
 }
 
 void main() {
   int maxSize = 100;
-  OrderedArray array = new OrderedArray(maxSize);
+  OrderedArrayTask4 array = new OrderedArrayTask4(maxSize);
 
   // Insert 10 items
   array.insert(77);
