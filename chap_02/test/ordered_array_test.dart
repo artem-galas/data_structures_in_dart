@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../OrderedArray/ordered_array.dart';
+import '../ordered_array.dart';
 
 void main() {
   OrderedArray orderedArray;

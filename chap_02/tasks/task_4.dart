@@ -3,7 +3,7 @@
 
 import 'dart:io';
 
-import '../OrderedArray/ordered_array.dart';
+import '../ordered_array.dart';
 
 class OrderedArrayTask4 extends OrderedArray {
   List<int> a;

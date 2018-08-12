@@ -6,35 +6,35 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
 
 ## Table of Contents
 ### Chap02. Arrays.
-  - LowArray - very simple example with arrays. 
-  - HighArray - rewritten `low_array.dart` using more OOP way. Describes **LinerSearch** in Arrays.
-  - OrderedArray - Describes **BinarySearch** in sorted Arrays.
-  - ClassData - Using Arrays with Object.
+  - `low_array` - very simple example with arrays.
+  - `high_array` - rewritten `low_array.dart` using more OOP way. Describes **LinerSearch** in Arrays.
+  - `ordered_array` - Describes **BinarySearch** in sorted Arrays.
+  - `class_data` - Using Arrays with Object.
 ### Chap 03. Simple Sorting
-  - BubbleSort - Bubble Sort Example
-  - Select Sort
-  - Insert Sort
-  - Object Sort - Object sort example using **insert sort** and **Lexicographical Comparisons**
+  - `bubble_sort` - Bubble Sort Example
+  - `select_sort`
+  - `insert_sort`
+  - `object_sort` - Object sort example using **insert sort** and **Lexicographical Comparisons**
 ### Chap 04. Stacks and Queues
-  - Stack
-    - stack - simple stack with array of integer
-    - reverse - reversing a word eq: `artem` -> `metra`
-    - brackets - Delimiter Matching - a program that checks the delimiters in a line of text typed by the user eq: `a{b(c]d}e` -> `Error ] at 5`
-  - Queue - simple queue.
-  - Priority Queue
-  - Infix - Convert Infix to Postfix eq `A+B*C` -> `ABC*+`
-  - Postfix - Evaluate Postfix Expressions eq `57+` -> `Evaluates to 12`
+  - stack
+    - `stack` - simple stack with array of integer
+    - `reverse` - reversing a word eq: `artem` -> `metra`
+    - `brackets` - Delimiter Matching - a program that checks the delimiters in a line of text typed by the user eq: `a{b(c]d}e` -> `Error ] at 5`
+  - `queue` - simple queue.
+  - `priority_queue`
+  - `infix` - Convert Infix to Postfix eq `A+B*C` -> `ABC*+`
+  - `postfix` - Evaluate Postfix Expressions eq `57+` -> `Evaluates to 12`
 ### Chap 05. Linked Lists
-  - LinkedList
+  - linked_list
     - `simple_linked_list ` - simple linked list implemintation with `deleteFirst` and `insertFirst` methods
     - `linked_list` - adding `delete` and `find` methods.
-  - FirstLastList - linked list with link to `first` and `last` object
-  - LinkStack - `stack` implementation using `linked list`
-  - LinkQueue `queue` implementation using `first_last_list`
-  - SortedList - sorted linked list
-  - List Insertion Sort - insertion sort array using linked list
-  - DobuleLinkedList - linked list where each element contain `next` and `previous` link
-  - ListIteraort - implementation linked list with iterator 
+  - `first_last_list` - linked list with link to `first` and `last` object
+  - `link_stack` - Stack implementation using `linked list`
+  - `link_queue` - Queue implementation using `first_last_list`
+  - `sorted_list` - sorted linked list
+  - `list_insertion_sort` - insertion sort array using linked list
+  - `double_linked_list` - linked list where each element contain `next` and `previous` link
+  - `list_iterator` - implementation linked list with iterator
 ### Chap06. Recursion
   - `triangle` - simple example of recursion - calculate triangle number. E.g `Triangle number 3 -> 6` (1, 3, 6, 10, 15, 21...)
   - `anagram` - somple program, which can do anograms. 
@@ -114,7 +114,6 @@ Enter first leter of show, insert, delete, find:
 s
 HashTable: 100 121 ** ** ** ** 196 137 138 ** 
 ```
-
 
 ## How to Run listing?
 

@@ -4,7 +4,7 @@
 
 import 'dart:io';
 
-import '../HighArray/high_array.dart';
+import '../high_array.dart';
 
 class HighArrayTask2 extends HighArray {
   HighArrayTask2(int max)

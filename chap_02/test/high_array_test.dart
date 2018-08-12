@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../HighArray/high_array.dart';
+import '../high_array.dart';
 
 void main() {
   HighArray highArray;

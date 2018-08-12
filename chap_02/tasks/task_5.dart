@@ -10,7 +10,7 @@
 import 'dart:io';
 import 'dart:math';
 
-import '../OrderedArray/ordered_array.dart';
+import '../ordered_array.dart';
 
 class OrderedArrayTask5 extends OrderedArray {
 
