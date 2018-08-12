@@ -1,0 +1,5 @@
+platforms: [vm]
+
+paths:
+  - chap_02/test
+  - chap_02/tasks/test

@@ -1,5 +1,7 @@
 # Data Structures and Algorithms in Dart
 
+[![Build Status](https://travis-ci.org/artem-galas/data_structures_in_dart.svg?branch=master)](https://travis-ci.org/artem-galas/data_structures_in_dart)
+
 This is a repository inspired by **[Data Structures & Algorithms in Java by Robert Lafore](https://www.amazon.com/Data-Structures-Algorithms-Java-2nd/dp/0672324539)**.
 
 There you can find all _listing_ rewritten on Dart and all _solved tasks_
