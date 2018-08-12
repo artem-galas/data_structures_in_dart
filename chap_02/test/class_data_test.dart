@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../ClassData/class_data.dart';
+import '../class_data.dart';
 
 void main() {
   DataArray dataArray;

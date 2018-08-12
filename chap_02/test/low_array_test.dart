@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../LowArray/low_array.dart';
+import '../low_array.dart';
 
 void main() {
   LowArray lowArray;
