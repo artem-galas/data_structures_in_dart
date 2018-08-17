@@ -4,7 +4,7 @@
 
 This is a repository inspired by **[Data Structures & Algorithms in Java by Robert Lafore](https://www.amazon.com/Data-Structures-Algorithms-Java-2nd/dp/0672324539)**.
 
-There you can find all _listing_ rewritten on Dart and all _solved tasks_
+There you can find all code-example rewritten on Dart and all solved tasks
 
 ## Table of Contents
 ### Chap02. Arrays.
@@ -39,7 +39,7 @@ There you can find all _listing_ rewritten on Dart and all _solved tasks_
   - `list_iterator` - implementation linked list with iterator
 ### Chap06. Recursion
   - `triangle` - simple example of recursion - calculate triangle number. E.g `Triangle number 3 -> 6` (1, 3, 6, 10, 15, 21...)
-  - `anagram` - somple program, which can do anograms. 
+  - `anagram` - simple program, which can do anagrams.
     E.g Input: `cat`
     Output:
     ```
@@ -117,7 +117,24 @@ s
 HashTable: 100 121 ** ** ** ** 196 137 138 ** 
 ```
 
-## How to Run listing?
+## How to Run Code?
 
+- Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
 - Open folder with project
-- Run into you terminal `dart path/to/file.dart` e.q `dart Chap02/LowArray/low_array.dart `
+- Run into you terminal `dart path/to/file.dart` e.q `dart chap_02/low_array.dart`
+
+## What IDE have support dart language?
+I prefer use [JetBrains](https://www.jetbrains.com/idea/)
+
+But you can use [VsCode](https://code.visualstudio.com/) + [DartCode](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) Plugin
+
+## How to test tasks?
+All tasks have a unit test, which located in `chap_N/tasks/test`.
+
+So you need:
+- copy and past that test to your project
+- change path to you solution
+- run `pub run test path/to_test.dart`
+
+## Contributing
+If you want to contribute or you find a issue/mistake feel free to create an issue and pull-request
