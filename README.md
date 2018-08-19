@@ -117,6 +117,21 @@ s
 HashTable: 100 121 ** ** ** ** 196 137 138 ** 
 ```
 
+- `hash_chain` - Chain method which use SortedLinkedList
+
+```bash
+Enter size of hash table: 5
+Enter initial number of items: 5
+Enter first leter of show, insert, delete, find
+s
+0. List (first -> last):
+1. List (first -> last): 56 86
+2. List (first -> last): 12
+3. List (first -> last): 13 48
+4. List (first -> last):
+Enter first leter of show, insert, delete, find
+```
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
