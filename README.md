@@ -132,6 +132,36 @@ s
 Enter first leter of show, insert, delete, find
 ```
 
+### Chap 12. Heap
+
+- `heap` - heap implementation
+
+```bash
+Enter first letter of show, insert, remove, change:
+s
+Heap Array: 100 90 80 30 60 50 70 20 10 40
+........................................................
+                                100
+                90                              80
+        30              60              50              70
+    20      10      40
+ ........................................................
+```
+
+- `heap_sort` - heap sorting - `O(N*logN)`
+
+```bash
+Enter number of items: 10
+Random Array: 58 42 87 29 14 53 39 79 9 64
+Heap: 87 79 58 42 64 53 39 29 9 14
+........................................................
+                                87
+                79                              58
+        42              64              53              39
+    29      9      14
+ ........................................................
+Sorted: 9 14 29 39 42 53 58 64 79 87
+```
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
