@@ -176,6 +176,15 @@ Visits: ABCDE
 Visits: ABDCE
 ```
 
+- `mst` - Minimum spanning tree
+
+![graph-not-optimized](./doc/graph-not-optimized.jpg)
+![graph-mst](./doc/graph-mst.jpg)
+
+```bash
+Minimum spanning tree: AB BC CD DE 
+```
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
