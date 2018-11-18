@@ -164,12 +164,16 @@ Sorted: 9 14 29 39 42 53 58 64 79 87
 ```
 
 ### Chap 13 Graph
+![graph](./doc/graph.jpg)
 
 - `dfs` - Depth-first search
-
-![graph](./doc/graph.jpg)
 ```bash
 Visits: ABCDE
+```
+
+- `bfs` - Breadth-first search 
+```bash
+Visits: ABDCE
 ```
 
 ## How to Run Code?
