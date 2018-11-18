@@ -162,6 +162,16 @@ Heap: 87 79 58 42 64 53 39 29 9 14
  ........................................................
 Sorted: 9 14 29 39 42 53 58 64 79 87
 ```
+
+### Chap 13 Graph
+
+- `dfs` - Depth-first search
+
+![graph](./doc/graph.jpg)
+```bash
+Visits: ABCDE
+```
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
