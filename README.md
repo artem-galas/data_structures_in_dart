@@ -185,6 +185,12 @@ Visits: ABDCE
 Minimum spanning tree: AB BC CD DE 
 ```
 
+- `topo` - Topology sorting
+
+```bash
+Topologically sorted order: BAEDGCFH
+```
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
