@@ -191,6 +191,17 @@ Minimum spanning tree: AB BC CD DE
 Topologically sorted order: BAEDGCFH
 ```
 
+### Chap 14. Weighted Graph
+
+- `mstw`- Minimum Spanning Tree with Weighted Graphs
+
+![weighted-graph-mstw-input](doc/weighted-graph-mstw-input.jpg)
+![weighted-graph-mstw-output](doc/weighted-graph-mstw-output.jpg)
+
+```bash
+Minimum spanning tree: AD AB BE EC CF 
+``` 
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
