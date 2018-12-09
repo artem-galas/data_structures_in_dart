@@ -202,6 +202,15 @@ Topologically sorted order: BAEDGCFH
 Minimum spanning tree: AD AB BE EC CF 
 ``` 
 
+- `path` - Find Shortest Path ([Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm))
+
+![graph_shortest_path](doc/graph_shortest_path.jpg)
+
+```bash
+Shortest Path: 
+A = inf(A) B = 50(A) C = 100(D) D = 80(A) E = 140(C) 
+```
+
 ## How to Run Code?
 
 - Be sure you have installed [dart](https://webdev.dartlang.org/tools/sdk#install)
