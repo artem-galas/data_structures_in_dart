@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import '../chap_04/queue.dart';
+import '../03_stack_queue/queue.dart';
 import './until/graph.dart';
 
 class GraphBfs extends Graph {

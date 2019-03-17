@@ -7,17 +7,17 @@ This is a repository inspired by **[Data Structures & Algorithms in Java by Robe
 There you can find all code-example rewritten on Dart and all solved tasks
 
 ## Table of Contents
-### Chap02. Arrays.
+### 01. Arrays.
   - `low_array` - very simple example with arrays.
   - `high_array` - rewritten `low_array.dart` using more OOP way. Describes **LinerSearch** in Arrays.
   - `ordered_array` - Describes **BinarySearch** in sorted Arrays.
   - `class_data` - Using Arrays with Object.
-### Chap 03. Simple Sorting
+### 02. Simple Sorting.
   - `bubble_sort` - Bubble Sort Example
   - `select_sort`
   - `insert_sort`
   - `object_sort` - Object sort example using **insert sort** and **Lexicographical Comparisons**
-### Chap 04. Stacks and Queues
+### 03. Stacks and Queues.
   - stack
     - `stack` - simple stack with array of integer
     - `reverse` - reversing a word eq: `artem` -> `metra`
@@ -26,7 +26,7 @@ There you can find all code-example rewritten on Dart and all solved tasks
   - `priority_queue`
   - `infix` - Convert Infix to Postfix eq `A+B*C` -> `ABC*+`
   - `postfix` - Evaluate Postfix Expressions eq `57+` -> `Evaluates to 12`
-### Chap 05. Linked Lists
+### 04. Linked Lists.
   - linked_list
     - `simple_linked_list ` - simple linked list implemintation with `deleteFirst` and `insertFirst` methods
     - `linked_list` - adding `delete` and `find` methods.
@@ -37,7 +37,7 @@ There you can find all code-example rewritten on Dart and all solved tasks
   - `list_insertion_sort` - insertion sort array using linked list
   - `double_linked_list` - linked list where each element contain `next` and `previous` link
   - `list_iterator` - implementation linked list with iterator
-### Chap06. Recursion
+### 05. Recursion.
   - `triangle` - simple example of recursion - calculate triangle number. E.g `Triangle number 3 -> 6` (1, 3, 6, 10, 15, 21...)
   - `anagram` - simple program, which can do anagrams.
     E.g Input: `cat`
@@ -50,19 +50,19 @@ There you can find all code-example rewritten on Dart and all solved tasks
     5  t c a
     6  t a c
     ```
-  - `binary_search` - binary search implemented with recursrion (binary search see Chap02/OrderedArray)
+  - `binary_search` - binary search implemented with recursion (binary search see 01_array/ordered_array)
   - `towers` - Tower of Hanoi algorithms using recursion
-  - `merge` - very simple implemintation merge 2 pre-sorted arrays.
+  - `merge` - very simple implementation merge 2 pre-sorted arrays.
   - `merge_sort` - Merge sorting array
   - `stack_triangle` - calculate triangle number with recursion and stack
-  - `stack_triangle2` - calculate triangle number usign stack insted of recusion
+  - `stack_triangle2` - calculate triangle number using stack instead of recension
   - `power` - X power Y using optimizing recursion method
-### Chap07. Sorting
+### 06. Sorting.
   - `shell_sorting` - sorting used [Shell's Method](https://en.wikipedia.org/wiki/Shellsort)
   - `partion`
   - `quick_sort1` - Quick sort based on last element of array
   - `quick_sort2` - QuickSort based on median
-### Chap08. Binary Tree
+### 07. Binary Tree.
   - `binary-tree` - Binary Search tree
   ```bash
                                   50
@@ -71,9 +71,9 @@ There you can find all code-example rewritten on Dart and all solved tasks
     --      --      30      43      --      --      --      93
   --  --  --  --  --  33  --  --  --  --  --  --  --  --  --  97
   ```
-### Chap 09. Red-Black Tree
+### 08. Red-Black Tree.
   Unfortunately there no code.
-### Chap 10. Tree 2 3 4
+### 09. Tree 2 3 4.
   - `tree_2_3_4` - Tree 2 3 4
   ```bash
   Enter first letter of show, insert, find: s
@@ -81,7 +81,7 @@ There you can find all code-example rewritten on Dart and all solved tasks
   Level = 1 child = 0 /30/40
   Level = 1 child = 1 /60/70
   ```    
-### Chap 11. Hash
+### 10. Hash.
 - `hash` - simple hash
 
 ```bash
@@ -132,7 +132,7 @@ s
 Enter first leter of show, insert, delete, find
 ```
 
-### Chap 12. Heap
+### 11. Heap.
 
 - `heap` - heap implementation
 
@@ -163,7 +163,7 @@ Heap: 87 79 58 42 64 53 39 29 9 14
 Sorted: 9 14 29 39 42 53 58 64 79 87
 ```
 
-### Chap 13 Graph
+### 12 Graph.
 ![graph](./doc/graph.jpg)
 
 - `dfs` - Depth-first search
@@ -191,7 +191,7 @@ Minimum spanning tree: AB BC CD DE
 Topologically sorted order: BAEDGCFH
 ```
 
-### Chap 14. Weighted Graph
+### 13. Weighted Graph.
 
 - `mstw`- Minimum Spanning Tree with Weighted Graphs
 
@@ -223,7 +223,7 @@ I prefer use [JetBrains](https://www.jetbrains.com/idea/)
 But you can use [VsCode](https://code.visualstudio.com/) + [DartCode](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) Plugin
 
 ## How to test tasks?
-All tasks have a unit test, which located in `chap_N/tasks/test`.
+All tasks have a unit test, which located in `0N_name/tasks/test`.
 
 So you need:
 - copy and past that test to your project
@@ -232,3 +232,8 @@ So you need:
 
 ## Contributing
 If you want to contribute or you find a issue/mistake feel free to create an issue and pull-request
+
+## TODO:
+- [ ] Add tests for implementations
+- [ ] Add task for each data structure
+- [ ] Add test for each task

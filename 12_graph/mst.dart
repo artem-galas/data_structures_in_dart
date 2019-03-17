@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import '../chap_04/stack/stack.dart';
+import '../03_stack_queue/stack/stack.dart';
 import './until/graph.dart';
 
 class GraphMst extends Graph {
