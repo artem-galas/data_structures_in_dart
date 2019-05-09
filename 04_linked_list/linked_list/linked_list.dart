@@ -18,7 +18,7 @@ class Link {
 
 class LinkList {
   Link first;
-  
+
   LinkList() {
     first = null;
   }
@@ -35,8 +35,8 @@ class LinkList {
 
   Link find(int key) {
     Link current = first;
-    while(current.intData != key) {
-      if(current.next == null) {
+    while (current.intData != key) {
+      if (current.next == null) {
         return null;
       } else {
         current = current.next;
@@ -49,8 +49,8 @@ class LinkList {
     Link current = first;
     Link prevous = first;
 
-    while(current.intData != key) {
-      if(current.next == null) {
+    while (current.intData != key) {
+      if (current.next == null) {
         return null;
       } else {
         prevous = current;
@@ -59,10 +59,10 @@ class LinkList {
     }
     if (current == first) {
       first = first.next;
-  	} else {
+    } else {
       prevous.next = current.next;
     }
-		return current;
+    return current;
   }
 
   Link deleteFirst() {
@@ -74,7 +74,7 @@ class LinkList {
   void displayList() {
     stdout.write('List frist -> last ');
     Link curent = first;
-    while(curent != null) {
+    while (curent != null) {
       curent.displayLink();
       curent = curent.next;
     }
@@ -83,7 +83,7 @@ class LinkList {
 }
 
 void main() {
-  LinkList linkList = new LinkList();  // Создание нового списка
+  LinkList linkList = new LinkList();
   linkList.insertFirst(22, 2.99);
   linkList.insertFirst(44, 4.99);
   linkList.insertFirst(66, 6.99);
@@ -91,19 +91,19 @@ void main() {
 
   linkList.displayList();
 
-	Link findElement = linkList.find(44);
-	if (findElement != null) {
-		stdout.writeln('Found link with key ${findElement.intData}');
-	} else {
-		stdout.writeln("Can't find link");
-	}
+  Link findElement = linkList.find(44);
+  if (findElement != null) {
+    stdout.writeln('Found link with key ${findElement.intData}');
+  } else {
+    stdout.writeln("Can't find link");
+  }
 
-	Link deletetElement = linkList.delete(66);
-	if (deletetElement != null) {
-		stdout.writeln('Delete link with key ${deletetElement.intData}');
-	} else {
-		stdout.writeln("Can't delete link");
-	}
+  Link deletetElement = linkList.delete(66);
+  if (deletetElement != null) {
+    stdout.writeln('Delete link with key ${deletetElement.intData}');
+  } else {
+    stdout.writeln("Can't delete link");
+  }
 
   linkList.displayList();
 }
