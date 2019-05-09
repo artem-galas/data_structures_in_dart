@@ -1,6 +1,6 @@
 platforms: [vm]
 
 paths:
-  - chap_02/test
-  - chap_02/tasks/test
-  - chap_03/test
+  - 01_array/test
+  - 01_array/tasks/test
+  - 02_simple_sorting/test
